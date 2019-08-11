@@ -27,8 +27,7 @@ Things you may want to cover:
 
 |Column|Type|Option|
 |------|----|------|
-|group_id|integer|null: false, foreign_key: true|
-|name|stribg|null: false, foreign_key: true|
+|name|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
 
    Association
@@ -39,9 +38,8 @@ Things you may want to cover:
     usersテーブル
 |Column|Type|Option|
 |------|----|------|
-|user_id|integer|null: false, foreign_key: true|
-|name|string|null: false, foreign_key: true|
-|email|string|null: false, foreign_key: true|
+|name|string|null: false|
+|email|string|null: false|
 
    Association
   belongs_to :chat
@@ -52,8 +50,8 @@ Things you may want to cover:
 |------|----|------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|text|text|null: false, foreign_key: true|
-|image|string|null: false, foreign_key: true|
+|chat|text|null: false|
+|image|text|null: false|
 
    Association
   has_many :groups

@@ -19,6 +19,7 @@
         justify-content: space-between;
         width: 100%;
         display: flex;
+<<<<<<< HEAD
 
         &__name {
           font-weight: bold;
@@ -28,13 +29,29 @@
           list-style: none;
 
           .icon { 
+=======
+        
+      }
+      &__name {
+        font-weight: bold;
+        
+        .menu {
+          display: flex;
+          list-style: none;
+          color: white;
+
+          .icon {
+>>>>>>> 05d7b94... reset
             color: white;
             font-size: 20px;
           }
         }
       }
     } 
+<<<<<<< HEAD
   }
+=======
+>>>>>>> 05d7b94... reset
 
 
     .groups {
@@ -81,6 +98,7 @@
         }
       }
     }
+<<<<<<< HEAD
       .header__right {
         color: #38aef0;
         border: 1px solid #38aef0;
@@ -150,6 +168,16 @@
         color: white;
         cursor: pointer;
       }
+=======
+    .header__right {
+      color: #38aef0;
+      border: 1px solid #38aef0;
+      height: 40px;
+      float: right;
+      line-height: 40px;
+      margin-top: 28px;
+      padding: 0 20px;
+>>>>>>> 05d7b94... reset
     }
   }
 }

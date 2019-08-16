@@ -19,23 +19,22 @@
         justify-content: space-between;
         width: 100%;
         display: flex;
+
+        &__name {
+          font-weight: bold;
         
-      }
-      &__name {
-        font-weight: bold;
-        
-        .menu {
+        &__menu {
           display: flex;
           list-style: none;
-          color: white;
 
-          .icon {
+          .icon { 
             color: white;
             font-size: 20px;
           }
         }
       }
     } 
+  }
 
 
     .groups {
@@ -82,14 +81,75 @@
         }
       }
     }
-    .header__right {
-      color: #38aef0;
-      border: 1px solid #38aef0;
-      height: 40px;
-      float: right;
-      line-height: 40px;
-      margin-top: 28px;
-      padding: 0 20px;
+      .header__right {
+        color: #38aef0;
+        border: 1px solid #38aef0;
+        height: 40px;
+        float: right;
+        line-height: 40px;
+        margin-top: 28px;
+        padding: 0 20px;
+    }
+    .messages {
+      height: calc(100vh - 190px);
+      padding: 46px 40px;
+      background-color: #fafafa;
+      overflow: scroll;
+      .message {
+        padding-bottom: 40px;
+        .message__upper {
+          display: flex;
+          margin-bottom: 10px;
+          &__name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #434a54;
+          }
+          &__date {
+            font-size: 12px;
+            margin-left: 10px;
+            color: #999999;
+          }
+        }
+        .message__text {
+          font-size:16px;
+          font-weight: bold;
+          color: #434a54;
+        }
+      }
+    }
+    .form {
+      height: 90px;
+      padding: 20px 40px;
+      background-color: #ddd;
+      &__message {
+        border: none;
+        float: left;
+        height: 50px;
+        width: calc(100% - 150px)
+      }
+      &__mask {
+        background-color: white;
+        height: 50px;
+        float: left;
+        padding-right: 10px;
+        &__image {
+          font-size: 20px;
+          line-height: 50px;
+        }
+        .hidden {
+          display: none;
+        }
+      }
+      &__submit {
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
 }

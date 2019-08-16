@@ -19,22 +19,23 @@
         justify-content: space-between;
         width: 100%;
         display: flex;
-
-        &__name {
-          font-weight: bold;
         
-        &__menu {
+      }
+      &__name {
+        font-weight: bold;
+        
+        .menu {
           display: flex;
           list-style: none;
+          color: white;
 
-          .icon { 
+          .icon {
             color: white;
             font-size: 20px;
           }
         }
       }
     } 
-  }
 
 
     .groups {
@@ -122,6 +123,7 @@
       height: 90px;
       padding: 20px 40px;
       background-color: #ddd;
+      box-sizing: border-box;
       &__message {
         border: none;
         float: left;
@@ -130,25 +132,26 @@
       }
       &__mask {
         background-color: white;
-        height: 50px;
         float: left;
+        height: 50px;
         padding-right: 10px;
         &__image {
           font-size: 20px;
-          line-height: 50px;
+          line-height: 50px
         }
         .hidden {
           display: none;
         }
       }
       &__submit {
-        width: 100px;
-        height: 50px;
-        padding: 0 30px;
-        margin-left: 15px;
-        background-color: #38aef0;
+        background-color: lightblue;
+        border: none;
         color: white;
-        cursor: pointer;
+        float: right;
+        font-size: 16px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
       }
     }
   }

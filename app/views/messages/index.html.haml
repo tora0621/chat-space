@@ -7,8 +7,9 @@
         %p.side-header__box__name
           name 
         %ul.side-heaser__box__menu
-          = link_to "", class: "icon" do
-            = fa_icon 'edit'
+          = link_to do
+            = fa_icon 'edit', class: 'icon'
+
           = link_to do
             = fa_icon 'cog', class: 'icon'
           
@@ -42,11 +43,15 @@
         .message__text
           message
 
+
     .form
       %form
-        %input.form__message
+        %input.form__message{ placeholder: "type a message"}
         .form__mask
           %label.form__mask__image
             = fa_icon 'picture-o', class: 'icon'
             %input.hidden{type: 'file'}
         %input.form__submit{type: 'submit', value: 'Send'}
+
+    .form
+

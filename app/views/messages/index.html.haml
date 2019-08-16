@@ -1,0 +1,45 @@
+.flash-box
+
+.wrapper
+  .side-bar
+    .side-header
+      .side-header__box
+        %p.side-header__box__name
+          name 
+        %ul.side-heaser__box__menu
+          = link_to do
+            = fa_icon 'edit', class: 'icon'
+          = link_to do
+            = fa_icon 'cog', class: 'icon'
+          
+    .groups
+      .group
+        .group__name
+          group
+        .group__message
+          hello
+
+  .chat
+    .header
+      .header__left
+        .header__left__group        
+          グループ名
+        %ul.header__left__members
+          member:
+          %li.header__left__members__member
+            tora
+      .header__right
+        .header__right__button
+          Edit
+      
+    .messages
+      .message
+        .message__upper
+          .message__upper__name
+            tora
+          .message__upper__date
+            2019/08/15
+        .message__text
+          message
+
+    .form

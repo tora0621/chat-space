@@ -6,30 +6,23 @@
   .side-bar {
     width: 300px;
     color: white;
+    box-sizing: border-box;
     float: left;
-    .side-header {
+    .header {
       background-color: #253141;
       height: 100px;
       padding: 0 20px;
-      align-items: center;
-      display: flex;
-      &__box {
-        color: white;
-        font-weight: bold; 
-        justify-content: space-between;
-        width: 100%;
-        display: flex;
-        
-      }
+      line-height: 100px;
       &__name {
         font-weight: bold;
-        
-        .menu {
-          display: flex;
-          list-style: none;
-          color: white;
-
-          .icon {
+        display: inline-block;
+        font-size: 16px;
+      &__lists {
+        display: inline-block;
+      }
+        .list {
+          display: inline-block;         
+        .icon {
             color: white;
             font-size: 20px;
           }
@@ -42,7 +35,6 @@
       background-color: #2f3e51;
       height: calc(100vh - 100px);
       padding: 0 20px;
-    
       .group {
         box-sizing: border-box;
         padding: 20px 0 40px;
@@ -98,7 +90,7 @@
       overflow: scroll;
       .message {
         padding-bottom: 40px;
-        .message__upper {
+        .message-upper {
           display: flex;
           margin-bottom: 10px;
           &__name {
@@ -112,10 +104,15 @@
             color: #999999;
           }
         }
-        .message__text {
+        .message-text {
           font-size:16px;
           font-weight: bold;
           color: #434a54;
+          &__content {
+            color: #434a54;
+            font-size: 14px;
+            margin-bottom: 40px;
+          }
         }
       }
     }
@@ -144,7 +141,7 @@
         }
       }
       &__submit {
-        background-color: lightblue;
+        background-color: rgb(69, 187, 226);
         border: none;
         color: white;
         float: right;

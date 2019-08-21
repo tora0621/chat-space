@@ -23,7 +23,6 @@ return html;
 
   $('#new_message').on('submit', function(e){
     e.preventDefault();
-    //console.log("ok")
     var formData = new FormData(this);
     var href = window.location.href
     $.ajax({
@@ -39,11 +38,9 @@ return html;
       $('.messages').append(html);
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
       $('.form__submit').prop( "disabled", false );
-      $('.form__message').val('');
-      $('.hidden').val('');
+      $('#new_message').get(0).reset();
     })
     .fail(function(){
-      //リロードすると固まる
       $('.form__submit').prop( "disabled", false );
       alert('error');
     })

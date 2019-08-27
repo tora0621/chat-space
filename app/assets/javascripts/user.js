@@ -1,3 +1,5 @@
+$(document).on('turbolinks:load', function(){
+
 $(function(){
   var search_list = $("#user-search-result");
   function appendUser(user){
@@ -15,6 +17,8 @@ $(function(){
                 </div>`
     return html;
   }
+  
+
   
   $("#user-search-field").on("keyup", function(){
     $("#user-search-result").empty();
@@ -46,4 +50,5 @@ $(function(){
   $("#chat-group-users").on("click",".user-search-remove", function() {
   $(this).parent().remove();
   });
+});
 });

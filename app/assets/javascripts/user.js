@@ -15,7 +15,7 @@ $(function(){
                 </div>`
     return html;
   }
-
+  
   $("#user-search-field").on("keyup", function(){
     $("#user-search-result").empty();
     var input = $("#user-search-result").val();

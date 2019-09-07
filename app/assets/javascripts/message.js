@@ -59,10 +59,14 @@ $(function(){
         data: {id: last_message_id}
       })
       .done(function(messages){
+        console.log(1)
         var insertHTML = '';
+        console.log(2)
         messages.forEach(function(message){
           insertHTML = buildHTML(message);
+          console.log(3)
           $('.messages').append(insertHTML);
+
         })
         $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
       })
